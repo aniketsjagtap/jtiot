@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .body { fill: #444; stroke: #333; stroke-width: 3; }
+    .fire { fill: #ffeb3b; animation: flicker 0.5s infinite alternate; }
+    @keyframes flicker { from { transform: scaleY(1); opacity: 0.8; } to { transform: scaleY(1.3); opacity: 1; } }
+    .steam { fill: white; opacity: 0.3; animation: rise 2s infinite linear; }
+    @keyframes rise { from { transform: translateY(0); opacity: 0.3; } to { transform: translateY(-20px); opacity: 0; } }
+  </style>
+  <rect x="10" y="40" width="80" height="70" rx="5" class="body" />
+  <rect x="35" y="10" width="30" height="30" class="body" />
+  <g class="fire-group" transform="translate(50, 95)">
+    <path d="M -15 0 Q 0 -30 15 0 Z" class="fire" />
+  </g>
+  <circle cx="40" cy="5" r="5" class="steam" />
+  <circle cx="60" cy="-5" r="7" class="steam" />
+</svg>

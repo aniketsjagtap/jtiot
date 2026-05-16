@@ -1,0 +1,21 @@
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ground { fill: #5d4037; }
+    .tank-wall { fill: #444; stroke: #333; stroke-width: 2; }
+    .liquid { fill: #00e5ff; opacity: 0.5; transition: height 1s ease; }
+    .concrete { fill: #999; }
+  </style>
+  <!-- Ground Level -->
+  <rect x="0" y="20" width="150" height="10" class="ground" />
+  
+  <!-- Access Manhole -->
+  <rect x="65" y="10" width="20" height="20" class="concrete" />
+  
+  <!-- Tank Body -->
+  <rect x="20" y="30" width="110" height="100" rx="15" class="tank-wall" />
+  
+  <!-- Liquid Level -->
+  <rect id="liquid-level" x="22" y="128" width="106" height="0" rx="13" class="liquid" />
+  
+  <text x="75" y="145" text-anchor="middle" style="fill:#888; font-size:10px; font-weight:800;">UNDERGROUND TANK</text>
+</svg>

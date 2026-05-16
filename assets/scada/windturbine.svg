@@ -1,0 +1,15 @@
+<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pole { fill: #bbb; }
+    .spinning { animation: rotate 3s linear infinite; transform-origin: 50px 40px; }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .blade { fill: white; stroke: #999; stroke-width: 1; }
+  </style>
+  <rect x="48" y="40" width="4" height="100" rx="2" class="pole" />
+  <g class="blades spinning">
+    <circle cx="50" cy="40" r="3" fill="#555" />
+    <path d="M 50 40 L 50 5 A 5 5 0 0 1 55 10 Z" class="blade" />
+    <path d="M 50 40 L 85 40 A 5 5 0 0 1 80 45 Z" class="blade" transform="rotate(120, 50, 40)" />
+    <path d="M 50 40 L 85 40 A 5 5 0 0 1 80 45 Z" class="blade" transform="rotate(240, 50, 40)" />
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pipe { fill: none; stroke: #333; stroke-width: 16; stroke-linecap: square; }
+    .flow { fill: none; stroke: #00e5ff; stroke-width: 8; stroke-dasharray: 20 10; opacity: 0.4; }
+    .active .flow { animation: flowMove 1s linear infinite; }
+    @keyframes flowMove { from { stroke-dashoffset: 30; } to { stroke-dashoffset: 0; } }
+  </style>
+  <path d="M 0 10 L 200 10" class="pipe" />
+  <path d="M 0 10 L 200 10" class="flow" />
+</svg>

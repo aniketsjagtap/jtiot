@@ -1,0 +1,15 @@
+<svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .col-body { fill: #777; stroke: #555; stroke-width: 2; }
+    .tray { stroke: #555; stroke-width: 1; }
+    .steam { fill: white; opacity: 0.2; animation: rise 2s infinite linear; }
+    @keyframes rise { from { transform: translateY(0); opacity: 0.2; } to { transform: translateY(-40px); opacity: 0; } }
+  </style>
+  <rect x="30" y="20" width="40" height="160" rx="5" class="col-body" />
+  <line x1="30" y1="50" x2="70" y2="50" class="tray" />
+  <line x1="30" y1="80" x2="70" y2="80" class="tray" />
+  <line x1="30" y1="110" x2="70" y2="110" class="tray" />
+  <line x1="30" y1="140" x2="70" y2="140" class="tray" />
+  <circle cx="50" cy="10" r="5" class="steam" />
+  <text x="50" y="195" text-anchor="middle" style="fill:#888; font-size:10px; font-weight:800;">REFINERY</text>
+</svg>

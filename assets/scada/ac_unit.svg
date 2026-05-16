@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .running { animation: fan-spin 0.5s infinite linear; transform-origin: 25px 30px; }
+    @keyframes fan-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .cold-air { fill: #00e5ff; opacity: 0.2; animation: blow 1s infinite; }
+    @keyframes blow { from { opacity: 0.2; transform: translateY(0); } to { opacity: 0; transform: translateY(10px); } }
+  </style>
+  <rect x="5" y="10" width="90" height="40" rx="5" fill="#eee" stroke="#ccc" stroke-width="2" />
+  <circle cx="25" cy="30" r="12" fill="#ddd" />
+  <path d="M 25 30 L 25 20 M 25 30 L 35 30 M 25 30 L 25 40 M 25 30 L 15 30" stroke="#999" stroke-width="2" class="running" />
+  <rect x="50" y="25" width="35" height="10" rx="2" fill="#ccc" />
+  <path d="M 50 40 L 85 40" stroke="#00e5ff" stroke-width="2" class="cold-air" />
+  <text x="50" y="58" text-anchor="middle" style="fill:#888; font-size:8px;">HVAC / AC</text>
+</svg>

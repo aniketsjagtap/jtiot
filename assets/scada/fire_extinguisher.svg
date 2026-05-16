@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .alarm { animation: shake 0.2s infinite; }
+    @keyframes shake { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+  </style>
+  <path d="M 40 30 L 60 30 L 65 90 L 35 90 Z" fill="red" stroke="#900" stroke-width="2" />
+  <rect x="45" y="10" width="10" height="20" fill="#333" />
+  <path d="M 50 15 L 80 25" stroke="#333" stroke-width="4" fill="none" />
+  <text x="50" y="98" text-anchor="middle" style="fill:#888; font-size:10px; font-weight:800;">FIRE EXT</text>
+</svg>

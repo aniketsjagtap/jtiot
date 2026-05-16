@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tank-body { fill: none; stroke: #555; stroke-width: 4; }
+    .liquid { fill: #00e5ff; opacity: 0.6; transition: height 1s ease-in-out, y 1s ease-in-out; }
+    .grid { stroke: rgba(255,255,255,0.1); stroke-width: 1; }
+  </style>
+  <!-- Tank Frame -->
+  <rect x="10" y="10" width="80" height="130" rx="10" ry="10" class="tank-body" />
+  
+  <!-- Liquid Fill (Controlled via height and y) -->
+  <rect id="liquid-level" x="12" y="138" width="76" height="0" rx="8" ry="8" class="liquid" />
+  
+  <!-- Grid Markers -->
+  <line x1="10" y1="36" x2="90" y2="36" class="grid" />
+  <line x1="10" y1="62" x2="90" y2="62" class="grid" />
+  <line x1="10" y1="88" x2="90" y2="88" class="grid" />
+  <line x1="10" y1="114" x2="90" y2="114" class="grid" />
+</svg>

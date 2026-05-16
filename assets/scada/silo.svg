@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .silo-body { fill: #ccc; stroke: #999; stroke-width: 2; }
+    .level { fill: #ffa726; opacity: 0.6; transition: height 1s ease; }
+  </style>
+  <path d="M 20 30 L 20 120 L 50 140 L 80 120 L 80 30 A 30 15 0 0 0 20 30" class="silo-body" />
+  <rect id="silo-level" x="22" y="118" width="56" height="0" class="level" />
+  <text x="50" y="20" text-anchor="middle" style="fill:#888; font-size:10px; font-weight:800;">SILO</text>
+</svg>

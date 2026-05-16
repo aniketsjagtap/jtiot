@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .moving { animation: arm-move 2s infinite alternate ease-in-out; }
+    @keyframes arm-move { from { transform: rotate(0deg); } to { transform: rotate(-30deg); } }
+    .base { fill: #333; }
+    .segment { fill: #ffa726; stroke: #fb8c00; stroke-width: 2; }
+  </style>
+  <rect x="20" y="80" width="60" height="10" rx="2" class="base" />
+  <g class="arm-group moving" style="transform-origin: 50px 85px;">
+    <rect x="45" y="40" width="10" height="45" rx="5" class="segment" />
+    <g style="transform-origin: 50px 45px; animation: arm-move 1.5s infinite alternate ease-in-out;">
+      <rect x="45" y="10" width="10" height="35" rx="5" class="segment" />
+      <rect x="40" y="5" width="20" height="5" class="base" />
+    </g>
+  </g>
+  <text x="50" y="98" text-anchor="middle" style="fill:#888; font-size:8px;">ROBOT ARM</text>
+</svg>

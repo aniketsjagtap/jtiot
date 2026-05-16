@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .running { animation: spin 2s linear infinite; transform-origin: center; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .body { fill: #333; stroke: #555; stroke-width: 2; }
+    .rotor { fill: #00e5ff; }
+  </style>
+  <circle cx="50" cy="50" r="40" class="body" />
+  <path d="M 50 10 L 50 20 M 90 50 L 80 50 M 50 90 L 50 80 M 10 50 L 20 50" stroke="#777" stroke-width="4" stroke-linecap="round" />
+  <g class="rotor-group">
+    <path d="M 50 50 L 50 25 M 50 50 L 75 50 M 50 50 L 50 75 M 50 50 L 25 50" stroke="#00e5ff" stroke-width="6" stroke-linecap="round" class="rotor" />
+  </g>
+</svg>
